@@ -32,6 +32,7 @@
 
 .marketing__start-heading {
   margin-top: 10rem;
+  text-align: center;
 }
 
 .marketing__start-heading,
@@ -76,6 +77,10 @@
   flex-direction: row-reverse;
 }
 
+.list__text {
+  flex-basis: 60%;
+}
+
 .list__text h3 {
   /* color: #4472c4; */
   color: rgb(250, 19, 158);
@@ -97,12 +102,13 @@
 }
 
 .list__image {
-  flex-basis: 100%;
+  flex-basis: 40%;
   /* min-height: 30rem; */
 }
 
 .list__image img {
-  min-height: 30rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .marketing__second-heading {
@@ -249,6 +255,7 @@
   margin: 10rem auto 4rem;
   color: white;
   text-shadow: 0.1rem 0.1rem 0 rgb(5, 4, 83);
+  text-align: center;
 }
 
 .marketing__fourth-list {
@@ -358,14 +365,16 @@
     align-items: center;
   }
 
+  .list__text {
+    flex-basis: auto;
+  }
+
   .list__image {
-    /* width: 40rem; */
-    max-width: 70%;
+    flex-basis: auto;
   }
 
   .list__image img {
-    height: 100%;
-    width: 100%;
+    width: 90%;
   }
 
   .marketing__fifth-heading,
