@@ -139,6 +139,16 @@
   margin-bottom: 6rem;
 }
 
+.marketing__video {
+  display: block;
+  /* width: 80%; */
+  max-height: 90vh;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 3rem black;
+  border-radius: 1rem;
+}
+
 .marketing__link {
   display: block;
   font-size: 3rem;
