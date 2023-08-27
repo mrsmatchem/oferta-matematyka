@@ -228,6 +228,11 @@ section {
   margin-bottom: 2rem;
 }
 
+.offers-box ul li:last-of-type p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
 .offers-box ul li span {
   font-weight: 700;
   color: rgb(250, 19, 158);
