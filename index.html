@@ -10,8 +10,8 @@
       src="https://kit.fontawesome.com/a9aadfaaaa.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/marketing.css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/marketing.css" type="text/css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -25,12 +25,12 @@
           </p>
         </div>
         <a href="#offers" class="header__link btn"> Zobacz oferty </a>
-        <!-- <i class="fa-solid fa-chevron-down header__icon"></i> -->
+        <i class="fa-solid fa-chevron-down header__icon"></i>
       </div>
       <div class="header__image-container">
         <img
           class="header__image"
-          src="./media/portrait-bg-op-3.png"
+          src="./work-dir/portrait-bg.png"
           alt="portrait"
         />
       </div>
@@ -162,6 +162,34 @@
         <span>KROK PO KROKU</span> plan nauki, który działa niezależnie od
         szkoły w&nbsp;jakiej się uczysz.
       </p>
+      <div class="marketing__messages-container messages">
+        <swiper-container class="messages__swiper" init="false">
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message1.png" alt="message1" />
+            <img src="./media/messages/message2.png" alt="message2" />
+          </swiper-slide>
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message3.png" alt="message3" />
+            <img src="./media/messages/message4.png" alt="message4" />
+          </swiper-slide>
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message5.png" alt="message5" />
+            <img src="./media/messages/message6.png" alt="message5" />
+          </swiper-slide>
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message7.png" alt="message5" />
+            <img src="./media/messages/message8.png" alt="message5" />
+          </swiper-slide>
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message9.png" alt="message5" />
+            <img src="./media/messages/message10.png" alt="message5" />
+          </swiper-slide>
+          <swiper-slide class="messages__slide">
+            <img src="./media/messages/message11.png" alt="message5" />
+            <img src="./media/messages/message12.png" alt="message5" />
+          </swiper-slide>
+        </swiper-container>
+      </div>
       <h2 class="marketing__eighth-heading">
         Ten plan pomógł moim uczniom osiągnąć satysfakcjonujące wyniki
         z&nbsp;egzaminów
@@ -201,17 +229,17 @@
           </div>
         </div>
         <!-- <div class="list__box">
-          <div class="list__text">
-            <h3>Q&A z Mrs MatChem</h3>
-            <p>
-              Grupowe lekcje Q&A dla wszystkich uczniów raz w&nbsp;miesiącu
-              z&nbsp;Mrs MatChem, gdzie tłumaczę konkretne zadanie na żywo.
-            </p>
-          </div>
-          <div class="list__image">
-            <img src="./media/Taking-notes-pana-blue.svg" alt="Q&A image" />
-          </div>
-        </div> -->
+            <div class="list__text">
+              <h3>Q&A z Mrs MatChem</h3>
+              <p>
+                Grupowe lekcje Q&A dla wszystkich uczniów raz w&nbsp;miesiącu
+                z&nbsp;Mrs MatChem, gdzie tłumaczę konkretne zadanie na żywo.
+              </p>
+            </div>
+            <div class="list__image">
+              <img src="./media/Taking-notes-pana-blue.svg" alt="Q&A image" />
+            </div>
+          </div> -->
         <div class="list__box">
           <div class="list__text">
             <h3>Dostęp do Grupy Członkowskiej MatChem University</h3>
@@ -422,10 +450,238 @@
         </div>
       </div>
       <!-- <h2 class="offers-warning">
-        <span class="offers-warning__span">UWAGA!</span> Pakiet Elite i VIP są
-        dostępne jako subskrypcja 4 miesięczna.<br />Podana cena dotyczy ceny za
-        jeden miesiąc.
-      </h2> -->
+          <span class="offers-warning__span">UWAGA!</span> Pakiet Elite i VIP są
+          dostępne jako subskrypcja 4 miesięczna.<br />Podana cena dotyczy ceny za
+          jeden miesiąc.
+        </h2> -->
+    </section>
+    <section class="testimonials">
+      <div class="testimonials__column">
+        <div class="testimonial">
+          <div class="testimonial__avatar avatar">
+            <img
+              src="./media/testimonial-photos/Kasia.jpg"
+              alt="Kasia-photo"
+              class="avatar__photo"
+            />
+            <div class="avatar__content">
+              <h3 class="avatar__name">Kasia</h3>
+              <h3 class="avatar__title">
+                Od 0 do 56% i zdanej matury po 13 latach
+              </h3>
+            </div>
+          </div>
+          <div class="testimonial__comment">
+            <p class="testimonial__comment-text">
+              Polecam w 100%. Nie zastanawiajcie się ani chwili czy warto
+              skorzystać z korepetycji u Pani Kingi. Po 13-stu latach podeszłam
+              do matury i zdałam dzięki jej talentowi do nauczania.
+            </p>
+          </div>
+          <div class="testimonial__content">
+            <div
+              class="testimonial__list-container testimonial__list-container--before"
+            >
+              <h4 class="testimonial__list-title">
+                Na początku mojego programu nauki:
+              </h4>
+              <ul class="testimonial__list">
+                <li>
+                  Kasia zgłosiła się do mnie na początku roku jej marzeniem było
+                  zdać maturę po 13 latach przerwy od nauki i pójście na studia
+                </li>
+                <li>
+                  Początki były ciężkie ale postanowiłam, że zrobię wszystko,
+                  żeby mogła spełnić to marzenie
+                </li>
+              </ul>
+            </div>
+            <div
+              class="testimonial__list-container testimonial__list-container--after"
+            >
+              <h4 class="testimonial__list-title">Po programie:</h4>
+              <ul class="testimonial__list">
+                <li>Kasia zdała maturę na 56%</li>
+                <li>Obecnie spełnia swoje marzenie i już studiuje</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial__avatar avatar">
+            <img
+              src="./media/testimonial-photos/KubaW.jpg"
+              alt="Kasia-photo"
+              class="avatar__photo"
+            />
+            <div class="avatar__content">
+              <h3 class="avatar__name second">Kuba</h3>
+              <h3 class="avatar__title">
+                Od "nie umiem matematyki" do 49% z matury
+              </h3>
+            </div>
+          </div>
+          <div class="testimonial__comment second">
+            <p class="testimonial__comment-text">
+              Zajęcia Z Panią były na wysokim poziomie. Najbardziej podczas
+              zajęć podobało mi się to, że nie byłem traktowany jako kolejny
+              uczeń, który czegoś nie umie. Moje oczekiwania w stosunku do pani
+              zajęć były takie jakie sobie wyobrażałem, czyli indywidualne
+              podejście pod ucznia, miła atmosfera. Jeśli się czegoś nie
+              rozumiało od razu do tego wracaliśmy. Jestem zadowolony z wyniku,
+              który uzyskałem na maturze. Myślę, że gdyby nie zajęcia z panią
+              Kingą to bym nie miał chęci do uczenia się matemtyki do matury.
+              Jednym słwem bardzo fajne zajęcia i polecam każdemu kto ma problem
+              z matematyką.
+            </p>
+          </div>
+          <div class="testimonial__content">
+            <div
+              class="testimonial__list-container testimonial__list-container--before"
+            >
+              <h4 class="testimonial__list-title">
+                Na początku mojego programu nauki:
+              </h4>
+              <ul class="testimonial__list">
+                <li>
+                  Na początku roku szkolnego Kuba twierdził, że nie umie
+                  matematyki
+                </li>
+                <li>
+                  Początki nie były łatwe, a egzaminy w szkole nie pomagały
+                </li>
+              </ul>
+            </div>
+            <div
+              class="testimonial__list-container testimonial__list-container--after second"
+            >
+              <h4 class="testimonial__list-title">Po programie:</h4>
+              <ul class="testimonial__list">
+                <li>
+                  Mimo trudności Kuba był zdyscyplinowany i systematycznie
+                  przygotowywaliśmy się do matury
+                </li>
+                <li>Opanował podstawowe zagadnienia obowiązujące na egzamin</li>
+                <li>
+                  W efekcie końcowym napisał maturę na 49% i mógł zapomnieć raz
+                  na zawsze o matematyce
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__column">
+        <div class="testimonial">
+          <div class="testimonial__avatar avatar">
+            <img
+              src="./media/testimonial-photos/Kuba.jpg"
+              alt="Kasia-photo"
+              class="avatar__photo"
+            />
+            <div class="avatar__content">
+              <h3 class="avatar__name second">Kuba</h3>
+              <h3 class="avatar__title">
+                Rewelacyjny wynik egzaminu maturalnego w zaledwie 8 miesięcy
+              </h3>
+            </div>
+          </div>
+          <div class="testimonial__comment second">
+            <p class="testimonial__comment-text">
+              Ze wszystkich korepetytorów z jakimi miałem do czynienia Pani
+              Kinga była najlepsza. Zawsze potrafiła dobrze wytłumaczyć
+              wszystkie niejasności i zawiłości w chemii oraz matematyce w
+              sposób klarowny i przystępny dla mnie. Nasze lekcje zawsze
+              przebiegały bezstresowo i w bardzo miłej atmosferze. Efektywność
+              naszych lekcji najlepiej obrazują wyniki matury, które pozwoliły
+              mi bezproblemowo dostać na się na studia. Z czystym sumieniem
+              polecam korki u Pani Kingi!!!
+            </p>
+          </div>
+          <div class="testimonial__content">
+            <div
+              class="testimonial__list-container testimonial__list-container--before"
+            >
+              <h4 class="testimonial__list-title">
+                Na początku mojego programu nauki:
+              </h4>
+              <ul class="testimonial__list">
+                <li>
+                  Kuba twierdziła, że matematyka to nie jest jego najmocniejsza
+                  strona
+                </li>
+                <li>
+                  Obawiał się, czy osiągnie satysfakcjonujący wynik z matury
+                </li>
+              </ul>
+            </div>
+            <div
+              class="testimonial__list-container testimonial__list-container--after second"
+            >
+              <h4 class="testimonial__list-title">Po programie:</h4>
+              <ul class="testimonial__list">
+                <li>Kuba opanowała cały niezbędny materiał do matury</li>
+                <li>Napisał maturę na 80%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__avatar avatar">
+            <img
+              src="./media/testimonial-photos/Martyna.jpg"
+              alt="Kasia-photo"
+              class="avatar__photo"
+            />
+            <div class="avatar__content">
+              <h3 class="avatar__name">Martyna</h3>
+              <h3 class="avatar__title">
+                Od "chciałam napisać w miarę dobrze maturę" do 96% z matematyki
+              </h3>
+            </div>
+          </div>
+          <div class="testimonial__comment">
+            <p class="testimonial__comment-text">
+              Pani Kinga w sposób bardzo profesjonalny i rzetelny podchodzi do
+              swoich uczniów. Potrafi zainteresować tematem i zmotywować do
+              nauki, a przede wszystkim przekazać wiedzę w sposób prosty i
+              zrozumiały. A przy okazji w porównaniu do wielu innych nauczycieli
+              nauk ścisłych - jest zawsze uśmiechnięta i zaraża pozytywną
+              energią.
+            </p>
+          </div>
+          <div class="testimonial__content">
+            <div
+              class="testimonial__list-container testimonial__list-container--before"
+            >
+              <h4 class="testimonial__list-title">
+                Na początku mojego programu nauki:
+              </h4>
+              <ul class="testimonial__list">
+                <li>
+                  Martyna od początku chciała napisać maturę z
+                  satysfakcjonującym wynikiem
+                </li>
+                <li>
+                  Miała jedynie obawy, czy zdąży opanować cały obowiązujący
+                  materiał
+                </li>
+              </ul>
+            </div>
+            <div
+              class="testimonial__list-container testimonial__list-container--after"
+            >
+              <h4 class="testimonial__list-title">Po programie:</h4>
+              <ul class="testimonial__list">
+                <li>Martyna na egzamin poszła bez zbędnego stresu</li>
+                <li>Miała systematyczne wsparcie w procesie nauki</li>
+                <li>Zdobyła 96% z matury z matematyki</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer-text">
@@ -447,5 +703,8 @@
       </div>
     </footer>
     <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
   </body>
 </html>

@@ -1,0 +1,138 @@
+.offers {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  scroll-snap-align: start;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &-box {
+    flex: 1 1 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(9, 7, 66);
+    /* box-shadow: 0 0 1rem rgb(250, 19, 158); */
+    border-radius: 2rem;
+    text-align: center;
+    overflow: hidden;
+    /* overflow-wrap: normal; */
+    border: 0.2rem solid $first-main;
+    transition: 0.5s ease;
+
+    h3 {
+      font-size: 2.6rem;
+    }
+
+    h4 {
+      font-size: 3.5rem;
+      /* border-radius: 1rem; */
+    }
+
+    .up-side {
+      padding: 3rem 2rem 2rem;
+    }
+
+    .down-side {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      padding: 1.3rem 1.8rem;
+      background: $first-main;
+
+      p {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+      }
+
+      h5 {
+        text-decoration-line: line-through;
+        text-decoration-color: $first-bg;
+        text-decoration-thickness: 0.2rem;
+        -webkit-text-decoration-thickness: 0.2rem;
+        font-size: 2rem;
+      }
+
+      &__price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+      }
+
+      h4 {
+        display: block;
+        font-size: 2.4rem;
+
+        span {
+          display: block;
+          font-size: 1.8rem;
+        }
+      }
+
+      h2 {
+        margin-top: 1rem;
+        padding: 1rem 0;
+        border-radius: 1rem;
+        color: $warning;
+        background: white;
+        font-weight: 700;
+        text-shadow: 0 0 0.1rem red;
+        /* text-decoration: underline red; */
+        // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    &:hover {
+      border-color: $first-main;
+      transform: scale(1.02);
+    }
+
+    .fa-trophy {
+      color: #e1c702;
+    }
+
+    ul {
+      font-size: 1.8rem;
+      margin: 2rem 0 0;
+      text-align: left;
+
+      li {
+        margin: 1rem 2rem 0;
+
+        &:last-of-type {
+          margin-top: 3rem;
+          list-style: none;
+          margin-bottom: 2rem;
+
+          p {
+            margin-top: 0.8rem;
+            font-weight: 600;
+          }
+        }
+
+        span {
+          font-weight: 700;
+          color: $first-main;
+        }
+      }
+    }
+  }
+
+  &-warning {
+    text-align: center;
+    margin-top: 2rem;
+
+    &__span {
+      color: $warning;
+    }
+  }
+}

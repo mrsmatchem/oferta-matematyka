@@ -1,0 +1,144 @@
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  scroll-snap-align: start;
+
+  &__column {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.testimonial {
+  background-color: $second-bg;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.8rem black;
+
+  display: flex;
+  flex-direction: column;
+
+  .avatar {
+    display: flex;
+    padding: 3rem 3rem 1rem;
+
+    @media (max-width: 450px) {
+      align-items: center;
+    }
+
+    &__photo {
+      border-radius: 50%;
+      // border: 0.2rem solid black;
+      display: block;
+      max-width: 35%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 2.5rem 1.5rem;
+    }
+
+    &__name {
+      font-size: 2.8rem;
+      color: $first-main;
+      text-shadow: 0 0 1rem black;
+
+      &.second {
+        color: $second-main;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__comment {
+    margin: 1.5rem 3rem 0;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: $first-main;
+    border-radius: 2rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border: 3rem solid transparent;
+      border-top: 0;
+      border-bottom-color: $first-main;
+      top: -2rem;
+      left: 4.5rem;
+    }
+
+    &.second {
+      background-color: $second-main;
+
+      &:after {
+        border-bottom-color: $second-main;
+      }
+    }
+  }
+
+  &__content {
+    font-size: 2rem;
+    // padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__list-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+  }
+
+  &__list {
+    padding-left: 2rem;
+    li {
+      margin-top: 1rem;
+    }
+  }
+
+  &__list-container--before {
+    padding: 3rem;
+    .testimonial__list-title {
+      color: #919090;
+    }
+  }
+
+  &__list-container--after {
+    padding: 3rem;
+    border: 0.2rem solid $first-main;
+    border-radius: 2rem;
+
+    .testimonial__list-title {
+      color: $first-main;
+    }
+
+    &.second {
+      border-color: $second-main;
+
+      .testimonial__list-title {
+        color: $second-main;
+      }
+    }
+  }
+
+  .second-color-bg {
+    background-color: $second-main;
+  }
+
+  .second-color-border {
+    border-color: $second-main;
+  }
+
+  .second-color {
+    color: $second-main;
+  }
+}

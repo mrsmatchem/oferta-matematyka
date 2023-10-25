@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 90%;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+
+  @media (max-width: 1600px) {
+    font-size: 67%;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 60%;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: $first-bg;
+  color: $first-text;
+  // overflow-x: hidden;
+}
+
+.btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  padding: 1.3rem 1.8rem;
+  text-decoration: none;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: $first-text;
+  background-color: $first-main;
+  border-radius: 1rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 3rem $first-main;
+    /* transform: translateY(-0.2rem); */
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem 9%;
+  scroll-snap-align: start;
+
+  @media (max-width: 1200px) {
+    padding: 2rem 3%;
+  }
+}
+
+@import "./header";
+@import "./testimonials";
+@import "./offers";
+@import "./footer";
