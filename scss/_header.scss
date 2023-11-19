@@ -54,7 +54,7 @@
     }
 
     p {
-      margin-top: 3rem;
+      margin-top: 6rem;
       font-size: 2.9rem;
       font-weight: 700;
       text-justify: newspaper;
@@ -68,6 +68,10 @@
     left: 0;
     right: 0;
     animation: chevronDownUp infinite 3s;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__image-container {
@@ -95,12 +99,12 @@
     display: block;
     position: absolute;
     max-width: 35rem;
-    left: 0;
+    right: 0;
     bottom: 0;
     filter: drop-shadow(0 0 5rem $first-main);
 
     @media (max-width: 1200px) {
-      max-width: 38rem;
+      width: 40rem;
     }
 
     @media (max-width: 991px) {
