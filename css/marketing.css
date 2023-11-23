@@ -292,6 +292,29 @@
   text-shadow: 0.1rem 0.1rem 0 rgb(5, 4, 83);
 }
 
+.marketing__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing__logo-div {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 9999px;
+  border: 0.3rem solid rgb(5, 4, 83);
+  overflow: hidden;
+}
+
+.marketing__logo-img {
+  height: 40rem;
+  width: 40rem;
+}
+
 .marketing__third-p {
   text-align: center;
   font-weight: 700;
