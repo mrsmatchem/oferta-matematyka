@@ -48,7 +48,18 @@
     }
   }
 
-  &-iconTop {
+  &-icon-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    transition: 0.5s;
+    z-index: 100;
+
+    &.invisible {
+      transform: translateY(10rem) scale(0);
+      // display: none;
+    }
+
     a {
       display: inline-flex;
       justify-content: center;
@@ -57,6 +68,7 @@
       background: $first-main;
       border-radius: 50%;
       transition: 0.5s ease;
+      box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.7);
 
       &:hover {
         box-shadow: 0 0 1rem $first-main;
