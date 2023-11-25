@@ -58,7 +58,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 2rem 9%;
   scroll-snap-align: start;
 
@@ -68,6 +68,7 @@ section {
 }
 
 @import "./header";
-@import "./testimonials";
+@import "./marketing/scheme";
 @import "./offers";
+@import "./testimonials";
 @import "./footer";
