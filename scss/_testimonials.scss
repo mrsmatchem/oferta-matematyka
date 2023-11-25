@@ -29,9 +29,12 @@
     }
 
     &__photo {
-      border-radius: 50%;
+      border-radius: 9999px;
       // border: 0.2rem solid black;
       display: block;
+      width: 15rem;
+      height: min-content;
+      max-height: 20rem;
       max-width: 35%;
     }
 
