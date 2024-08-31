@@ -1,0 +1,90 @@
+.faq {
+  &__title {
+    text-align: center;
+    font-size: 4.5rem;
+    text-shadow: 0 0 1rem black;
+    color: white;
+  }
+  &__body {
+    margin: 5rem auto;
+    max-width: 900px;
+    font-size: 2rem;
+    border: 2px solid $first-main;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  &-tab {
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+
+      &:checked {
+        & ~ .faq-tab__content {
+          max-height: 60rem;
+        }
+
+        & + label::after {
+          transform: rotateZ(270deg);
+        }
+      }
+
+      &:not(:checked) + label:hover::after {
+        animation: bounce 0.5s infinite;
+      }
+    }
+
+    label {
+      position: relative;
+      display: flex;
+      color: white;
+      background: $first-main;
+      cursor: pointer;
+      font-weight: 600;
+      justify-content: space-between;
+      border-bottom: 0.2rem solid $first-bg;
+      padding: 2rem 5rem 2rem 2rem;
+
+      &::after {
+        content: "\276F";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 1.5rem;
+        top: 30%;
+        width: 1em;
+        height: 1em;
+        transform: rotate(90deg);
+        transition: all 0.35s;
+      }
+    }
+
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.35s;
+
+      p {
+        margin: 0;
+        padding: 2rem 3rem;
+      }
+    }
+
+    &__link {
+      width: fit-content;
+      margin: 0 3rem 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(0.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-0.25rem);
+  }
+}

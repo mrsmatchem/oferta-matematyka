@@ -173,7 +173,7 @@
         <span>KROK PO KROKU</span> plan nauki, który działa niezależnie od
         szkoły w&nbsp;jakiej się uczysz.
       </p>
-      <div class="marketing__messages-container messages">
+      <div id="messages" class="marketing__messages-container messages">
         <swiper-container class="messages__swiper" init="false">
           <swiper-slide class="messages__slide">
             <img src="./media/messages/message1.png" alt="message1" />
@@ -1523,6 +1523,158 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <h1 class="faq__title">Najczęściej zadawane pytania</h1>
+      <div class="faq__body">
+        <div class="faq-tab">
+          <input type="checkbox" id="tab1" />
+          <label for="tab1">
+            1. Czy ten kurs rzeczywiście pomoże mi w nauce matematyki?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Tak, ten kurs został stworzony z myślą o skutecznym przekazywaniu
+              wiedzy i rozwijaniu umiejętności matematycznych. Dzięki
+              sprawdzonym metodom nauczania i systematycznej pracy, uczniowie
+              osiągają wysokie wyniki na maturze.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab2" />
+          <label for="tab2">
+            2. Jakie są opinie innych uczennic, które ukończyły ten kurs?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Uczennice, które ukończyły kurs, często podkreślają, że dzięki
+              niemu odzyskały pewność siebie i zrozumiały trudne zagadnienia.
+              Wielu z nich udało się osiągnąć wyniki, które wcześniej wydawały
+              się nieosiągalne. To realne historie sukcesu, które mogą być
+              również Twoim udziałem.
+            </p>
+            <a class="faq-tab__link btn" href="#messages">Zobacz opinie</a>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab3" />
+          <label for="tab3"> 3. Czy kurs jest wart swojej ceny? </label>
+          <div class="faq-tab__content">
+            <p>
+              Inwestycja w ten kurs to inwestycja w Twoją przyszłość. Dzięki
+              niemu zyskasz nie tylko wiedzę, ale także pewność, że osiągniesz
+              wynik, który otworzy Ci drzwi do wymarzonych studiów.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab4" />
+          <label for="tab4">
+            4. Jak długo trwa kurs i ile czasu muszę poświęcić na naukę każdego
+            dnia?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Kurs trwa do końca kwietnia 2025, tydzień przed grupowymi
+              zajęciami otrzymujesz wideolekcje do samodzielnej pracy aby
+              zapoznać się z teorią, a później omawiamy ją na zajęciach
+              grupowych na żywo i przechodzimy do zadań praktycznych. Tygodniowo
+              jest to około ¾ godzin nauki. Systematyczna praca przynosi
+              najlepsze rezultaty, a program kursu został tak zaprojektowany,
+              abyś mógł/ mogla efektywnie zarządzać swoim czasem.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab5" />
+          <label for="tab5">
+            5. Czy będę miała dostęp do wsparcia na żywo, jeśli czegoś nie
+            zrozumiem?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Oczywiście! Każdy uczestnik kursu ma dostęp do wsparcia na żywo,
+              gdzie odpowiadamy na wszystkie pytania i wyjaśniamy trudne
+              zagadnienia. Nigdy nie zostaniesz sam/sama – zawsze możesz liczyć
+              na pomoc i wyjaśnienia, które pozwolą Ci lepiej zrozumieć
+              materiał.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab6" />
+          <label for="tab6">
+            6. Czy mogę zobaczyć przykładowe materiały z kursu przed zakupem?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Tak, oferujemy dostęp do przykładowej lekcji wideo teori, zajęcia
+              grupowe odbywają się na żywo więc nie mam ich próbek abyś
+              mogła/mógł zobaczyć, jak wygląda taka lekcja ale jest sympatycznie
+              i w każdej chwili możesz zadać pytanie na żywo jeśli coś jest
+              niezrozumiałe.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab7" />
+          <label for="tab7">
+            7. Jakie metody nauczania są stosowane w tym kursie?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Stosujemy metody, które są sprawdzone i skuteczne, dostosowane do
+              różnych stylów uczenia się. Kurs łączy teorię z praktyką, dzięki
+              czemu uczniowie zyskują głębokie zrozumienie materiału i potrafią
+              wykorzystać wiedzę w praktyce, na egzaminie.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab8" />
+          <label for="tab8">
+            8. Czy kurs pomoże mi zwiększyć pewność siebie przed maturą?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Absolutnie! Nasz kurs nie tylko uczy matematyki, ale także buduje
+              pewność siebie. Zrozumienie materiału i regularne testy sprawiają,
+              że na maturę podchodzisz z poczuciem, że jesteś dobrze
+              przygotowana i gotowa na każde wyzwanie.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab9" />
+          <label for="tab9">
+            9. Co się stanie, jeśli nie będę mogła uczestniczyć w zajęciach na
+            żywo?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Nie martw się – wszystkie zajęcia są nagrywane, więc możesz do
+              nich wrócić w dowolnym momencie. Dzięki temu masz pełną kontrolę
+              nad swoim harmonogramem nauki i nie stracisz żadnej lekcji, nawet
+              jeśli coś Ci wypadnie.
+            </p>
+          </div>
+        </div>
+        <div class="faq-tab">
+          <input type="checkbox" id="tab10" />
+          <label for="tab10">
+            10. Czy są jakieś dodatkowe koszty związane z kursem, o których
+            powinnam wiedzieć?
+          </label>
+          <div class="faq-tab__content">
+            <p>
+              Nasz kurs jest przejrzysty i nie ma ukrytych kosztów. Wszystkie
+              materiały i wsparcie są wliczone w cenę kursu, więc możesz skupić
+              się wyłącznie na nauce i przygotowaniach do matury.
+            </p>
           </div>
         </div>
       </div>
