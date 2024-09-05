@@ -14,6 +14,7 @@
 
   &-box {
     flex: 1 1 31rem;
+    max-width: 70rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,6 +29,7 @@
 
     h3 {
       font-size: 2.6rem;
+      margin-bottom: 4rem;
     }
 
     h4 {
@@ -36,7 +38,7 @@
     }
 
     .up-side {
-      padding: 3rem 2rem 2rem;
+      padding: 4rem 3rem 0 3rem;
     }
 
     .down-side {
@@ -82,10 +84,9 @@
         margin-top: 1rem;
         padding: 1rem 0;
         border-radius: 1rem;
-        color: $warning;
-        background: white;
+        color: $first-bg;
         font-weight: 700;
-        text-shadow: 0 0 0.1rem red;
+        font-style: italic;
         /* text-decoration: underline red; */
         // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
       }
@@ -107,6 +108,14 @@
 
       li {
         margin: 1rem 2rem 0;
+
+        h5 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          margin: 0.8rem 0;
+        }
 
         &:last-of-type {
           margin-top: 3rem;
