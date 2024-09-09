@@ -34,7 +34,7 @@
       height: calc(100% + 1rem);
       width: $list-schema-line-width;
       background-color: $first-bg;
-      left: -$list-schema-line-width/2;
+      left: calc(-1 * $list-schema-line-width / 2);
       top: -2rem;
     }
 

@@ -39,6 +39,21 @@
 
     .up-side {
       padding: 4rem 3rem 0 3rem;
+
+      &__info {
+        display: block;
+        font-size: 1.6rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        color: $first-main;
+        font-weight: 700;
+
+        span {
+          color: $first-text;
+          text-transform: lowercase;
+        }
+      }
     }
 
     .down-side {
@@ -107,7 +122,7 @@
       text-align: left;
 
       li {
-        margin: 1rem 2rem 0;
+        margin: 3.5rem 2rem 0;
 
         h5 {
           font-size: 1.8rem;
